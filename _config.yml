@@ -1,1 +1,18 @@
-theme: jekyll-theme-dinky
+title: "Master of Insomnia"
+author: kaiyuey
+email: carey.kaiyue.yang@gmail.com
+
+baseurl: ""
+github_username: kaiyuey
+
+theme: minima
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
