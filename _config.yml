@@ -1,18 +1,122 @@
+# ---------------- #
+#   Main Configs   #
+# ---------------- #
+baseurl:
+url: http://mazhuang.org
+date_format: "ordinal"
 title: "Master of Insomnia"
-author: kaiyuey
+subtitle: "Here We Go"
+description: "Person Blog"
+keywords: kaiyuey
+timezone: America/Los_Angeles
+encoding: "utf-8"
+side_bar_repo_limit: 5
+
+# ---------------- #
+#      Author      #
+# ---------------- #
+author: Kaiyue Yang
+organization: Alexa
+organization_url: https://alexa.amazon.com
+github_username: kaiyuey
+location: Seattle, US
 email: carey.kaiyue.yang@gmail.com
 
-baseurl: ""
-github_username: kaiyuey
+# ---------------- #
+#    Navigation    #
+# ---------------- #
+navs:
+  -
+    href: /
+    label: Home
 
-theme: minima
+  -
+    href: /categories/
+    label: Category
 
-exclude:
-  - Gemfile
-  - Gemfile.lock
+  -
+    href: /wiki/
+    label: Wiki
 
-defaults:
-  - scope:
-      path: "assets/img"
-    values:
-      image: true
+  -
+    href: /links/
+    label: Link
+
+  -
+    href: /about/
+    label: About
+
+# ---------------- #
+#       RSS        #
+# ---------------- #
+subscribe_rss: /feed.xml
+
+# ---------------- #
+#      Jekyll      #
+# ---------------- #
+markdown: kramdown
+kramdown:
+    input: GFM
+highlighter: rouge
+paginate: 8
+lsi: false
+quiet: false
+excerpt_separator: "\n\n"
+permalink: /:year/:month/:day/:title/
+gems:
+    - jekyll-github-metadata
+    - rouge
+#     - jekyll-html-pipeline
+    - jekyll-paginate
+    - jekyll-sitemap
+    - jekyll-feed
+    - jemoji
+#     - jekyll-mentions
+collections:
+    wiki:
+        output: true
+        permalink: /wiki/:path/
+
+repository: kaiyuey/kaiyuey.github.io
+
+# ---------------- #
+#      Comments    #
+# ---------------- #
+# support provider: disqus, gitment, gitalk
+comments_provider: gitalk
+# !!!重要!!! 请修改下面这些信息为你自己申请的
+# !!!Important!!! Please modify infos below to yours
+# https://disqus.com
+disqus:
+    username:
+# https://imsun.net/posts/gitment-introduction/
+gitment:
+    owner: kaiyuey
+    repo: blog-comments
+    oauth:
+        client_id: 9cd2479d5f40211a9156
+        client_secret: cfc9f436646386824d0556a9c35a270724801d1b
+# https://github.com/gitalk/gitalk#install
+gitalk:
+    owner: kaiyuey
+    repo: blog-comments
+    clientID: 9cd2479d5f40211a9156
+    clientSecret: cfc9f436646386824d0556a9c35a270724801d1b
+# 在使用其它评论组件时可点击显示 Disqus
+lazy_load_disqus : false
+
+# ---------------- #
+#      Search      #
+# ---------------- #
+simple_jekyll_search:
+    # 是否支持全文搜索
+    fulltext: false
+    # 最多显示多少条搜索结果
+    limit: 10
+
+# ---------------- #
+#    Analytics     #
+# ---------------- #
+# Replace when you want to apply the theme to your site
+google:
+    analytics_id: UA-2647675446-1

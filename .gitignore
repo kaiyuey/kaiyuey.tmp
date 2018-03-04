@@ -1,2 +1,3 @@
 # ignore following files
-./_site
+_site
+Gemfile.lock
