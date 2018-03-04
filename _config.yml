@@ -2,10 +2,10 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: https://kaiyuey.github.io/
+url: https://kaiyuey.github.io
 date_format: "ordinal"
 title: "Master of Insomnia"
-subtitle: "Here We Go"
+subtitle: "Welcome to my world!"
 description: "Person Blog"
 keywords: kaiyuey
 timezone: America/Los_Angeles
@@ -16,7 +16,7 @@ side_bar_repo_limit: 5
 #      Author      #
 # ---------------- #
 author: Kaiyue Yang
-organization: Alexa
+organization: Amazon Alexa
 organization_url: https://alexa.amazon.com
 github_username: kaiyuey
 location: Seattle, US

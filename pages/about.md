@@ -8,8 +8,13 @@ menu: About
 permalink: /about/
 ---
 
-Software Developer at Amazon.
+> 月·光
 
+![What's next](/assets/img/ZootopiaIN.jpg)
+
+## Introduction
+
+Hey, I'm Kaiyue Yang, currently a Software Engineer at Amazon Alexa. 
 
 ## Contact
 
