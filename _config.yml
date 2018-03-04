@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: http://mazhuang.org
+url: https://kaiyuey.github.io/
 date_format: "ordinal"
 title: "Master of Insomnia"
 subtitle: "Here We Go"
